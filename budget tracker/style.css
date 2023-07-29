@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(icon/new.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: monospace;
+
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.container {
+  margin: 3rem;
+
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  animation: slideContainer 0.7s ease-in 0.5s 1 normal;
+}
+
+@keyframes slideContainer {
+  from {
+    transform: translateX(-500px);
+  }
+
+  to {
+    transform: translateX(-150px);
+  }
+}
+
+.view-funds {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.view-funds h2 {
+  letter-spacing: 5px;
+  color: #fff;
+  padding: 1rem;
+  font-size: 31px;
+  text-shadow: 0 0 17px black;
+}
+
+.income-view {
+  background-color: greenyellow;
+  margin: 1rem;
+  height: 43px;
+  width: 401px;
+  display: flex;
+  border-radius: 7px;
+  justify-content: center;
+
+  align-items: center;
+}
+
+#total-income {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#total-expenses {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.income-heading {
+  background-color: green;
+  margin: 1rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.expense-heading {
+  background-color: red;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.expense-view {
+  background-color: red;
+  margin: 1rem;
+  height: 43px;
+  width: 401px;
+  display: flex;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.insert-funds {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.income-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  background-color: black;
+  color: #fff;
+  margin: 1rem;
+}
+
+.expense-container {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+
+  padding: 2rem;
+  background-color: black;
+  color: #fff;
+}
+
+.income-container input {
+  margin: 7px;
+  padding: 4px;
+}
+
+.expense-container input {
+  margin: 7px;
+  padding: 4px;
+}
+
+.btn-add {
+  height: 26px;
+  width: 40px;
+  margin: 1rem;
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-10px);
+}
+
+hr {
+  background-color: #fff;
+  height: 1px;
+  margin-top: 7px;
+}
+
+#income-list {
+  padding: 2rem;
+  color: green;
+}
+
+#expense-list {
+  padding: 2rem;
+  color: red;
+}
+
+#income-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#expense-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+li div {
+  background-image: url(icon/icons8-trash-30.png);
+  background-position: center;
+  background-size: cover;
+  height: 29px;
+  width: 31px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+li div:hover {
+  transform: translateY(-8px);
+}
+
+.balance p {
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+#total-balance {
+  color: #fff;
+}
+/*
+@media screen and (max-width: 600px) {
+    .container{
+      height: 140vh;
+    }
+  
+    .view-funds{
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+  
+      
+    }
+  }
+
+  */

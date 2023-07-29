@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+</head>
+<body>
+
+ <div class="container">
+    <div class="view-funds">
+        <h2>Budget Tracker</h2>
+
+      
+            <p class="income-heading">Total income: <span id="total-income"></span></p>
+       
+        
+            <p class='expense-heading'>Total expenses: <span id="total-expenses"></span></p>
+        
+    </div>
+
+
+    <div class="insert-funds">
+        <div class="income-container">
+            <p>Add income</p>
+            <hr>
+            <input type="text" placeholder="Enter income name" id="income-name">
+            <input type="text" placeholder="R" id="income-amount">
+            <button class="btn-add" id="add-income" onclick="addIncome()">Add</button>
+              
+        <ul id="income-list"></ul>
+            
+        </div>
+        <div class="expense-container">
+            <p>add expense</p>
+            <hr>
+            <input type="text"  placeholder="Enter expense name" id="expense-name">
+            <input type="text" placeholder="R"  id="expense-amount">
+            <button class="btn-add" id="add-expense" onclick="expense()">Add</button>
+
+            <ul id="expense-list"></ul>
+
+
+        </div>
+
+    </div>
+
+ 
+ </div>
+
+ <div class="balance">
+    <p>Your total balance for <span class="month">00/00/00</span> is <div id="total-balance"></div></p>
+ </div>
+
+ 
+    
+
+   
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
